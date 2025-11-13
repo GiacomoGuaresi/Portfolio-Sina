@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio – Sina Lueder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-black font-sans">
+
+    <div class="flex flex-col md:flex-row min-h-screen">
+
+        <!-- Sidebar -->
+        <aside class="md:w-1/4 w-full p-6 space-y-6">
+            <div>
+                <h1 class="text-2xl font-semibold tracking-wide">PORTFOLIO</h1>
+                <p class="text-2xl text-green-600 font-semibold mt-1 mb-12">SINA LUEDER</p>
+                <button data-page="about.html" class="text-xl italic mt-1 text-left hover:text-green-600 transition-colors">
+                    About/CV
+                </button>
+            </div>
+
+            <div>
+                <button data-page="projects.html" class="border-y-2 border-black w-full text-left p-2 mb-2 hover:text-green-600">
+                    <h2 class="text-2xl font-semibold italic">academic projects:</h2>
+                </button>
+                <ol class="text-xl list-decimal list-inside space-y-1">
+                    <li><button data-page="academic_project_1.html" class="hover:text-green-600">An architectural collage</button></li>
+                    <li><button data-page="academic_project_2.html" class="hover:text-green-600">Plateau Collective</button></li>
+                    <li><button data-page="academic_project_3.html" class="hover:text-green-600">Museum for design</button></li>
+                    <li><button data-page="academic_project_4.html" class="hover:text-green-600">Fictive commons</button></li>
+                    <li><button data-page="academic_project_5.html" class="hover:text-green-600">Café container</button></li>
+                    <li><button data-page="academic_project_6.html" class="hover:text-green-600">Is participation the future?</button></li>
+                    <li><button data-page="academic_project_7.html" class="hover:text-green-600">A house for a collector</button></li>
+                </ol>
+            </div>
+
+            <div>
+                <button data-page="projects.html" class="border-y-2 border-black w-full text-left p-2 mb-2 hover:text-green-600">
+                    <h2 class="text-2xl font-semibold italic">non-academic projects:</h2>
+                </button>
+                <ol class="text-xl list-decimal list-inside space-y-1">
+                    <li><button data-page="non_academic_project_1.html" class="hover:text-green-600">VAIA stage</button></li>
+                    <li><button data-page="non_academic_project_1.html" class="hover:text-green-600">Photographs</button></li>
+                </ol>
+            </div>
+
+            <div class="border-y-2 border-black w-full text-left p-2">
+                <p class="text-xl italic">Email contact</p>
+                <p class="text-lg text-gray-500">example@mailinator.com</p>
+            </div>
+            <p class="text-lg text-gray-500">©2024</p>
+        </aside>
+
+        <!-- Main content -->
+        <main id="content" class="flex-1 p-6 grid grid-cols-1 md:grid-cols-2 gap-6 transition-opacity duration-300">
+            <p class="text-gray-500">Select a project from the sidebar.</p>
+        </main>
+
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
